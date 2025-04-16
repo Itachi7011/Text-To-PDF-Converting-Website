@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TextToPDF - Beautiful Text File Conversion</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <h1><span>Text</span>ToPDF</h1>
+    </div>
+    <div class="nav-links">
+      <a href="#" class="active">Home</a>
+      <a href="#">About</a>
+      <a href="#">Help</a>
+    </div>
+    <div class="theme-toggle">
+      <button id="theme-switch">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <div class="hero">
+      <div class="hero-content">
+        <h1>Transform Your Text Files into Beautiful PDFs</h1>
+        <p>Upload your text files and instantly convert them into professionally formatted PDF documents</p>
+      </div>
+      <div class="hero-image">
+        <div class="cube">
+          <div class="face front">TXT</div>
+          <div class="face back">PDF</div>
+          <div class="face top">TXT</div>
+          <div class="face bottom">PDF</div>
+          <div class="face left">TXT</div>
+          <div class="face right">PDF</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="converter-section">
+      <div class="converter-card">
+        <div class="upload-container" id="drop-area">
+          <div class="upload-icon">
+            <i class="fas fa-cloud-upload-alt"></i>
+          </div>
+          <h3>Drag & Drop Your File Here</h3>
+          <p>or</p>
+          <label for="file-upload" class="custom-file-upload">
+            Choose File
+          </label>
+          <input type="file" id="file-upload" accept=".txt,.doc,.docx,.rtf,.md,.odt" hidden>
+          <p class="file-types">Supported formats: .txt, .doc, .docx, .rtf, .md, .odt</p>
+        </div>
+        <div class="file-details" id="file-details">
+          <div class="file-info hidden">
+            <div class="file-preview">
+              <div class="preview-content"></div>
+            </div>
+            <div class="file-meta">
+              <h3 id="file-name">No file selected</h3>
+              <p id="file-size">Size: 0 KB</p>
+              <button id="convert-btn" class="primary-btn">Convert to PDF</button>
+              <button id="clear-btn" class="secondary-btn">Clear</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="features-section">
+      <h2>Features</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-magic"></i>
+          </div>
+          <h3>Beautiful Formatting</h3>
+          <p>Automatic detection and enhancement of titles, subtitles, and paragraphs</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <h3>Instant Conversion</h3>
+          <p>Fast processing for immediate download of your PDF files</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>Privacy First</h3>
+          <p>All file processing happens in your browser - nothing is uploaded to our servers</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3>Mobile Friendly</h3>
+          <p>Works perfectly on all devices, from smartphones to desktops</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>TextToPDF</h3>
+        <p>Convert your text files to beautifully formatted PDFs with ease.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Connect</h3>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 TextToPDF. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
